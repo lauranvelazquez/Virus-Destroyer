@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 394}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
-  controlID: 52
+  controlID: 56
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 394}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 1
-  controlID: 50
+  controlID: 54
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 394}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 51
+  controlID: 55
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -429,9 +429,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.041890144, y: 0, z: -0.04175949}
+    m_Target: {x: 0, y: 0, z: 2.62}
     speed: 2
-    m_Value: {x: 0.041890144, y: 0, z: -0.04175949}
+    m_Value: {x: 0, y: 0, z: 2.62}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -462,11 +462,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.086856514, y: 0.90014845, z: -0.21058306, w: -0.3712728}
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: -0.08685652, y: 0.9001485, z: -0.21058308, w: -0.37127283}
   m_Size:
-    m_Target: 22
+    m_Target: 14.129549
     speed: 2
-    m_Value: 22
+    m_Value: 14.129549
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -612,20 +612,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/FSM/States
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/FSM/States
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\usuario\New Unity Project
+  m_LastProjectPath: D:\UPC\VirusDestroyer3.0
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f42c0000
-    m_LastClickedID: 11508
-    m_ExpandedIDs: 00000000d22c0000722e0000122f000000ca9a3b
+    m_SelectedIDs: d82c0000
+    m_LastClickedID: 11480
+    m_ExpandedIDs: 00000000d82c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -653,7 +653,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: d2260000
     m_LastClickedID: 9938
-    m_ExpandedIDs: 00000000d22c0000
+    m_ExpandedIDs: 00000000d82c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -778,7 +778,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 68fbffff
+      m_ExpandedIDs: a2faffff64fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

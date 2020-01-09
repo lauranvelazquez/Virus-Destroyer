@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+    <ProjectGuid>{189344CC-1FB8-64D7-D30F-3D427A446EE2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,9 +57,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Data\Enums.cs" />
+     <Compile Include="Assets\Scripts\Data\InputData.cs" />
      <Compile Include="Assets\Scripts\Data\ScoreData.cs" />
      <Compile Include="Assets\Scripts\EventController.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\BiowareController.cs" />
+     <Compile Include="Assets\Scripts\FSM\Controllers\CharacterController.cs" />
+     <Compile Include="Assets\Scripts\FSM\Controllers\EnemyController.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\HackerController.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\MagoController.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\Virus1Controller.cs" />
@@ -86,31 +89,31 @@
      <Compile Include="Assets\Scripts\FSM\States\StealingState.cs" />
      <Compile Include="Assets\Scripts\GameEvents.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/usuario/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/UPC/VirusDestroyer3.0/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/usuario/New Unity Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/UPC/VirusDestroyer3.0/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/usuario/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/UPC/VirusDestroyer3.0/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/usuario/New Unity Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/UPC/VirusDestroyer3.0/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/usuario/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/UPC/VirusDestroyer3.0/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/usuario/New Unity Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>D:/UPC/VirusDestroyer3.0/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/usuario/New Unity Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/UPC/VirusDestroyer3.0/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/usuario/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/UPC/VirusDestroyer3.0/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/usuario/New Unity Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/UPC/VirusDestroyer3.0/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Descar/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

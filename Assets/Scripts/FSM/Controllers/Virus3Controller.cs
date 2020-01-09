@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Virus3Controller : MonoBehaviour
+public class Virus3Controller : FSM
 {
     // Start is called before the first frame update
     void Start()
