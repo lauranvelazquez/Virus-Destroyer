@@ -11,9 +11,12 @@ public class AttackingState : State
     [SerializeField] ParticleSystem particleAttack;
     [SerializeField] private Slider slideEnergy;
     [SerializeField] Slider sliderEnergyEnemy;
+
+    public Text texto;
     
     public override void InitState() {
-        
+        Fight.InFight();
+        new WaitForSecondsRealtime(2);
     }
 
     public override void UpdateState(float delta)
@@ -33,7 +36,5 @@ public class AttackingState : State
             this.texto.text = "Attack";
             this.sliderEnergyEnemy.value -= 0.05f;
         }
-
-        PlayerIsActive = true;
     }
 }

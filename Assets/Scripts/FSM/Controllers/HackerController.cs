@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,7 +13,15 @@ public class HackerController : FSM
 
     private int _copyLimit=3;
 
-    public int shootingPoints;
+    private ScoreData _scoreData;
+    
+    public static State currentState;
+
+    private GameData _gameData;
+    
+    [SerializeField]
+    private Button bugButton, copyButton, stealButton;
+    
     
     
     // Start is called before the first frame update
@@ -24,29 +33,38 @@ public class HackerController : FSM
     // Update is called once per frame
     void Update()
     {
-        Button bugButton = GetComponent<Button>();
-        Button copyButton = GetComponent<Button>();
-        Button stealButton = GetComponent<Button>();
-        
+
         bugButton.onClick.AddListener(BugOnClick);
         
         if(_copyLimit<=0) copyButton.onClick.AddListener(CopyOnClick);
         
-        if (shootingPoints==100) stealButton.onClick.AddListener(StealOnClick);
+        if (_scoreData.shootingPoints==100) stealButton.onClick.AddListener(StealOnClick);
     }
     void BugOnClick(){
         SwitchState(new BuggingState());
+        Debug.Log("Hacker - case1");
+        Battle.ChangeTurn();
+        _gameData.actualState=new BuggingState();
+        
     }
 
     void CopyOnClick()
     {
-        SwitchState(new CopyingState());
+        State copy = _gameData.actualState;
+        SwitchState(new CopyingState() );
+        Debug.Log("Hacker - case2");
         _copyLimit--;
+        Battle.ChangeTurn();
+        _gameData.actualState=new CopyingState();
     }
 
     void StealOnClick()
     {
         SwitchState(new StealingState());
-        shootingPoints = 0;
-    }
+        Debug.Log("Hacker - case3");
+        _scoreData.shootingPoints = 0;
+        Battle.ChangeTurn();
+        _currentState = new StealingState();
+        _gameData.actualState=new StealingState();
+         }
 }

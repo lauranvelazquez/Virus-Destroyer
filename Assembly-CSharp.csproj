@@ -56,19 +56,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Data\Enums.cs" />
-     <Compile Include="Assets\Scripts\Data\InputData.cs" />
-     <Compile Include="Assets\Scripts\Data\ScoreData.cs" />
+     <Compile Include="Assets\Navmesh\NavmeshAssetManager.cs" />
+     <Compile Include="Assets\Navmesh\NavMeshComponentsGUIUtility.cs" />
+     <Compile Include="Assets\Navmesh\NavmeshLink.cs" />
+     <Compile Include="Assets\Navmesh\NavMeshLinkEditor.cs" />
+     <Compile Include="Assets\Navmesh\NavMeshModifier.cs" />
+     <Compile Include="Assets\Navmesh\NavmeshModifierEditor.cs" />
+     <Compile Include="Assets\Navmesh\NavMeshModifierVolume.cs" />
+     <Compile Include="Assets\Navmesh\NavMeshModifierVolumeEditor.cs" />
+     <Compile Include="Assets\Navmesh\NavMeshSurface.cs" />
+     <Compile Include="Assets\Navmesh\NavMeshSurfaceEditor.cs" />
      <Compile Include="Assets\Scripts\EventController.cs" />
+     <Compile Include="Assets\Scripts\FSM\Controllers\Battle.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\BiowareController.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\CharacterController.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\EnemyController.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\HackerController.cs" />
+     <Compile Include="Assets\Scripts\FSM\Controllers\Level.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\MagoController.cs" />
+     <Compile Include="Assets\Scripts\FSM\Controllers\MovementVirus2.cs" />
+     <Compile Include="Assets\Scripts\FSM\Controllers\Pointer.cs" />
+     <Compile Include="Assets\Scripts\FSM\Controllers\SimpleMovement.cs" />
+     <Compile Include="Assets\Scripts\FSM\Controllers\TManager.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\Virus1Controller.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\Virus2Controller.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\Virus3Controller.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\Virus4Controller.cs" />
+     <Compile Include="Assets\Scripts\FSM\Data\Enums.cs" />
+     <Compile Include="Assets\Scripts\FSM\Data\Fight.cs" />
+     <Compile Include="Assets\Scripts\FSM\Data\InputData.cs" />
+     <Compile Include="Assets\Scripts\FSM\Data\RandomState.cs" />
+     <Compile Include="Assets\Scripts\FSM\Data\ScoreData.cs" />
      <Compile Include="Assets\Scripts\FSM\FSM.cs" />
      <Compile Include="Assets\Scripts\FSM\State.cs" />
      <Compile Include="Assets\Scripts\FSM\States\AttackingState.cs" />
@@ -88,6 +106,15 @@
      <Compile Include="Assets\Scripts\FSM\States\ShootingState.cs" />
      <Compile Include="Assets\Scripts\FSM\States\StealingState.cs" />
      <Compile Include="Assets\Scripts\GameEvents.cs" />
+     <Compile Include="Assets\Scripts\UI\GameplayTime.cs" />
+     <Compile Include="Assets\Scripts\UI\GamePointsBar.cs" />
+     <Compile Include="Assets\Scripts\UI\ScoreBarScript.cs" />
+     <Compile Include="Assets\Scripts\UI\ShootingPointsBar.cs" />
+     <Compile Include="Assets\ScriptsUI\View\Scenes\ChangeScene.cs" />
+     <Compile Include="Assets\ScriptsUI\View\Scenes\CoursorGame.cs" />
+     <Compile Include="Assets\ScriptsUI\View\Scenes\InputNameAudio.cs" />
+     <Compile Include="Assets\ScriptsUI\View\Scenes\panelOpened.cs" />
+     <Compile Include="Assets\ScriptsUI\View\Scenes\Texto.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/UPC/VirusDestroyer3.0/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

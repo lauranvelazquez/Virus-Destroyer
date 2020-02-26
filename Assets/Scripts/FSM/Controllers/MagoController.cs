@@ -13,6 +13,8 @@ public class MagoController : FSM
     public int shootingPoints;
 
     private int  _electricityLimit;
+
+    private ScoreData _scoreData;
     
     // Start is called before the first frame update
     void Start()
@@ -31,23 +33,26 @@ public class MagoController : FSM
         
         if(_electricityLimit<=0) electricityButton.onClick.AddListener(ElecOnClick);
         
-        if (shootingPoints==100) lightButton.onClick.AddListener(LightOnClick);
+        if (_scoreData.shootingPoints==100) lightButton.onClick.AddListener(LightOnClick);
     }
 
     void ElecOnClick()
     {
         SwitchState(new ElectricityState());
         _electricityLimit--;
+        Battle.ChangeTurn();
     }
 
     void PixelOnClick()
     {
         SwitchState(new PixelingState());
+        Battle.ChangeTurn();
     }
 
     void LightOnClick()
     {
         SwitchState(new LightningState());
-        shootingPoints = 0;
+        _scoreData.shootingPoints = 0;
+        Battle.ChangeTurn();
     }
 }

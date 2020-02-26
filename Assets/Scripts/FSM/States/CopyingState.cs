@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class CopyingState : State
 {
-    public override void InitState() {
-        
+    private GameData _gameData;
+    
+    public override void InitState()
+    {
+        5888
     }
 
     public override void UpdateState(float delta) {
@@ -14,5 +17,7 @@ public class CopyingState : State
 
     public override void ExitState() {
         
-    }
 }
+}
+
+
