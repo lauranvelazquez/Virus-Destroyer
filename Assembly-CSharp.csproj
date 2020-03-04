@@ -72,12 +72,12 @@
      <Compile Include="Assets\Scripts\FSM\Controllers\CharacterController.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\EnemyController.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\HackerController.cs" />
-     <Compile Include="Assets\Scripts\FSM\Controllers\Level.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\MagoController.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\MovementVirus2.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\Pointer.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\SimpleMovement.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\TManager.cs" />
+     <Compile Include="Assets\Scripts\FSM\Controllers\Virus.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\Virus1Controller.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\Virus2Controller.cs" />
      <Compile Include="Assets\Scripts\FSM\Controllers\Virus3Controller.cs" />
@@ -106,6 +106,7 @@
      <Compile Include="Assets\Scripts\FSM\States\ShootingState.cs" />
      <Compile Include="Assets\Scripts\FSM\States\StealingState.cs" />
      <Compile Include="Assets\Scripts\GameEvents.cs" />
+     <Compile Include="Assets\Scripts\LifeTree.cs" />
      <Compile Include="Assets\Scripts\UI\GameplayTime.cs" />
      <Compile Include="Assets\Scripts\UI\GamePointsBar.cs" />
      <Compile Include="Assets\Scripts\UI\ScoreBarScript.cs" />

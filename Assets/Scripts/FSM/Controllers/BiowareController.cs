@@ -5,54 +5,69 @@ using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-public class BiowareController : FSM
+public class BiowareController : CharacterController
 {
     public int position;
 
-    public int velocity;
-
     public int shootingPoints;
+
+    private KeyCode _shootKey;
+    private KeyCode _fightKey;
+    
+    private readonly ShootingState _shooting = new ShootingState();
+    private readonly AttackingState _attacking = new AttackingState();
+    private readonly IddleState _iddle = new IddleState();
+    private readonly DieState _die = new DieState();
+    public readonly FightingState _Fighting = new FightingState();
+
+    [SerializeField] private SimpleMovement _movement; 
+    
 
     private ScoreData _scoreData;
     // Start is called before the first frame update
     void Start()
     {
-        SwitchState(new IddleState());
+        SwitchState(_iddle, _movement);
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        Button shootButton = GetComponent<Button>();
-        Button fightButton = GetComponent<Button>();
+        base.Update();
 
-        if (_scoreData.shootingPoints==100)
+        if (_scoreData.shootingPoints == 100 && Input.GetKey(_shootKey))
         {
-            shootButton.onClick.AddListener(ShootOnClick);
+            ShootOnClick();
+        }
+        else if (Input.GetKey(_fightKey))
+        {
+            FightOnClick();
         }
         else
         {
-            Debug.Log("you dont have shooting points to do this action");
-            
-        }
-        
-        fightButton.onClick.AddListener(FightOnClick);
-       
+            SwitchState(_iddle, _movement);
+            Debug.Log("Iddle-Bioware");
+            CanPlay = true; 
+        } 
     }
 
     void ShootOnClick()
     {
-      SwitchState(new ShootingState());
+      SwitchState(_shooting, _movement);
       _scoreData.shootingPoints = 0;
+      CanPlay = false;
+      Debug.Log("Bioware - Shooting");
+
       //pasar de turno
-      Battle.ChangeTurn();
+      //Battle.ChangeTurn();
     }
 
     void FightOnClick()
     {
-        SwitchState(new FightingState());
-        //pasar de turno
-        Battle.ChangeTurn();
+        SwitchState(_Fighting, _movement);
+        CanPlay = false;
+        Debug.Log("Bioware - Fight");
+        //pasar de turno//Battle.ChangeTurn();
     }
 
 }

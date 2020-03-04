@@ -7,45 +7,60 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-public class Virus2Controller : FSM
+public class Virus2Controller : Virus
 {
-    private bool _isNear;
-    private bool _playerAttack;
+    private Vector3 _initialPosition;
+    
+    private bool _isNear; //cercania
+    private bool _playerAttack; // algún ataque fuerte
+    
+    [SerializeField] private MovementVirus2 _movementVirus2;
 
-
-    // Start is called before the first frame update
-    private void Awake()
-    {
-       
-    }
-
-    void Start()
-    {
-        VirusInTurn();
-        return;
+    private readonly IddleState _iddle = new IddleState();
+    private readonly ShootingState _shooting = new ShootingState();
+    private readonly DieState _die = new DieState();
+    private readonly BlockingState _blocking = new BlockingState();
+    private readonly StealingState _stealing = new StealingState();
+    
+    private void Start() {
+        SwitchState(_iddle, _movementVirus2);
+        this.transform.position = _initialPosition;
     }
 
     void VirusInTurn()
     {
         if (_isNear)
         {
-            SwitchState(new ShootingState());
+            SwitchState(_shooting, _movementVirus2);
+            Debug.Log("2-Shoot");
+            CanAttack = false; 
         }
 
-        if (_playerAttack)
+        else if (_playerAttack==true)
         {
-            SwitchState(new BlockingState());
+            SwitchState(_blocking, _movementVirus2);
+            CanAttack = false; 
+            Debug.Log("2-Blocking");
+        }
+        else if(_playerAttack==false)
+        {
+            SwitchState(_stealing, _movementVirus2);
+            CanAttack = false; 
+            Debug.Log("2-Steal");
         }
         else
         {
-            SwitchState(new StealingState());
-        }
-        {
-            
+            SwitchState(_iddle, _movementVirus2);
+            CanAttack = true;
+            Debug.Log("2-Iddle");
         }
     }
     // Update Inis called once per frame
-    void Update()
+
+    protected override void Update()
     {
+        base.Update();
+        
+        VirusInTurn();
     }
 }

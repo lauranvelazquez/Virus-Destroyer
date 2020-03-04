@@ -27,12 +27,12 @@
               <e p="CharacterController.cs" t="Include" />
               <e p="EnemyController.cs" t="Include" />
               <e p="HackerController.cs" t="Include" />
-              <e p="Level.cs" t="Include" />
               <e p="MagoController.cs" t="Include" />
               <e p="MovementVirus2.cs" t="Include" />
               <e p="Pointer.cs" t="Include" />
               <e p="SimpleMovement.cs" t="Include" />
               <e p="TManager.cs" t="Include" />
+              <e p="Virus.cs" t="Include" />
               <e p="Virus1Controller.cs" t="Include" />
               <e p="Virus2Controller.cs" t="Include" />
               <e p="Virus3Controller.cs" t="Include" />
@@ -67,6 +67,7 @@
             </e>
           </e>
           <e p="GameEvents.cs" t="Include" />
+          <e p="LifeTree.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="GameplayTime.cs" t="Include" />
             <e p="GamePointsBar.cs" t="Include" />

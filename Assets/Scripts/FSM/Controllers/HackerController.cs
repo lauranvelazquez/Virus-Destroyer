@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class HackerController : FSM
+public class HackerController : CharacterController
 {
     public int position;
 
@@ -14,57 +14,70 @@ public class HackerController : FSM
     private int _copyLimit=3;
 
     private ScoreData _scoreData;
-    
-    public static State currentState;
 
     private GameData _gameData;
+
+    private State _currentState; 
     
     [SerializeField]
-    private Button bugButton, copyButton, stealButton;
+    private KeyCode bugKey, copyKey, stealKey;
+    
+    private readonly BuggingState _bugging = new BuggingState();
+    private readonly CopyingState _copying = new CopyingState();
+    private readonly StealingState _stealing = new StealingState();
+    private readonly IddleState _iddle = new IddleState();
+    private readonly DieState _die = new DieState();
+
+    private SimpleMovement _movement;
     
     
     
     // Start is called before the first frame update
     void Start()
     {
-     SwitchState(new IddleState());   
+        SwitchState(_iddle, _movement);  
+        Debug.Log("Hacker-Iddle");
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        bugButton.onClick.AddListener(BugOnClick);
-        
-        if(_copyLimit<=0) copyButton.onClick.AddListener(CopyOnClick);
-        
-        if (_scoreData.shootingPoints==100) stealButton.onClick.AddListener(StealOnClick);
+        if (Input.GetKey(bugKey)) BugOnClick();
+        else if(Input.GetKey(copyKey)&& _copyLimit<=0) CopyOnClick();
+        else if (_scoreData.shootingPoints == 100 && Input.GetKey(stealKey)) StealOnClick();
+        else
+        {
+            SwitchState(_iddle, _movement);  
+            Debug.Log("Hacker-Iddle");
+        }
     }
     void BugOnClick(){
-        SwitchState(new BuggingState());
+        SwitchState(_bugging, _movement);
         Debug.Log("Hacker - case1");
-        Battle.ChangeTurn();
+        //Battle.ChangeTurn();
         _gameData.actualState=new BuggingState();
-        
+        CanPlay = false;
     }
 
     void CopyOnClick()
     {
-        State copy = _gameData.actualState;
-        SwitchState(new CopyingState() );
+        _currentState = _gameData.actualState;
+        SwitchState(_currentState, _movement );
         Debug.Log("Hacker - case2");
         _copyLimit--;
-        Battle.ChangeTurn();
-        _gameData.actualState=new CopyingState();
+       // Battle.ChangeTurn();
+        _gameData.actualState=_currentState;
+        
+        CanPlay = false;
     }
 
     void StealOnClick()
     {
-        SwitchState(new StealingState());
+        SwitchState(_stealing, _movement);
         Debug.Log("Hacker - case3");
         _scoreData.shootingPoints = 0;
-        Battle.ChangeTurn();
-        _currentState = new StealingState();
+        //Battle.ChangeTurn();
+        CanPlay = false;
         _gameData.actualState=new StealingState();
-         }
+    }
 }

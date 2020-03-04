@@ -18,7 +18,8 @@ public class CharacterController : FSM
     private ScoreData _scoreData;
 
     private int virus;
-
+    
+    public bool CanPlay { set; get; }
     // Start is called before the first frame update
     void Start()
     {
@@ -76,5 +77,5 @@ public class CharacterController : FSM
     {
         
     }
-        
+
 }

@@ -4,55 +4,86 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class MagoController : FSM
+public class MagoController : CharacterController
 {
-    public int position;
-
-    public int velocity;
-
-    public int shootingPoints;
-
     private int  _electricityLimit;
 
     private ScoreData _scoreData;
+
+    private SimpleMovement _movement;
     
+    private readonly ElectricityState _electricity = new ElectricityState();
+    private readonly PixelingState _pixeling = new PixelingState();
+    private readonly LightningState _lightning = new LightningState();
+    private readonly DieState _die = new DieState();
+    private readonly IddleState _iddle = new IddleState();
+
+    [SerializeField] private KeyCode _electricityKey, _pixelKey, _LightingKey;
     // Start is called before the first frame update
     void Start()
     {
         SwitchState(new IddleState());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        Debug.Log("Mago-Iddle");
+        
         Button electricityButton = GetComponent<Button>();
         Button pixelButton = GetComponent<Button>();
         Button lightButton = GetComponent<Button>();
-        
+                
         pixelButton.onClick.AddListener(PixelOnClick);
-        
+                
         if(_electricityLimit<=0) electricityButton.onClick.AddListener(ElecOnClick);
-        
+                
         if (_scoreData.shootingPoints==100) lightButton.onClick.AddListener(LightOnClick);
+    }
+
+    // Update is called once per frame
+    protected override void Update()
+    {
+        base.Update();
+        if (Input.GetKey(_pixelKey))
+        {
+            PixelOnClick();
+        }
+        else if (Input.GetKey(_electricityKey) && _electricityLimit > 0)
+        {
+            ElecOnClick();
+        }
+        else if (Input.GetKey(_LightingKey)&&_scoreData.shootingPoints==100)
+        {
+            LightOnClick();
+        }
+        else
+        {
+            SwitchState(_iddle, _movement);
+            Debug.Log("Mago-Iddle");
+            CanPlay = true;
+        }
+
     }
 
     void ElecOnClick()
     {
-        SwitchState(new ElectricityState());
+        SwitchState(_electricity, _movement);
         _electricityLimit--;
-        Battle.ChangeTurn();
+        CanPlay = false;
+        //Battle.ChangeTurn();
+        Debug.Log("Mago-electricity");
     }
 
     void PixelOnClick()
     {
-        SwitchState(new PixelingState());
-        Battle.ChangeTurn();
+        SwitchState(_pixeling, _movement);
+        //Battle.ChangeTurn();
+        CanPlay = false;
+        Debug.Log("Mago-pixel");
     }
 
     void LightOnClick()
     {
-        SwitchState(new LightningState());
+        SwitchState(_lightning, _movement);
         _scoreData.shootingPoints = 0;
-        Battle.ChangeTurn();
+        //Battle.ChangeTurn();
+        CanPlay = false;
+        Debug.Log("Mago-light");
     }
 }

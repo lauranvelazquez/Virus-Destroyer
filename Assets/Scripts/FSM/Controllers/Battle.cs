@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -69,4 +71,30 @@ public class Battle : MonoBehaviour
         actions++;
         goAttack = false;
     }
+}
+
+public class TurnManager: MonoBehaviour
+{
+    public static CharacterController _character;
+    public static Virus _virus;
+
+    private void Start()
+    {
+        _character.CanPlay = true;
+    }
+
+    public static void ChangeTurn()
+    {
+
+        if (_character.CanPlay = true)
+        {
+            _virus.CanAttack = false;
+        }
+
+        if (_character.CanPlay = false)
+        {
+            _virus.CanAttack = true;
+        }
+    }
+
 }

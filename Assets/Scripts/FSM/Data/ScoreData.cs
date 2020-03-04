@@ -43,11 +43,19 @@ public class SerializableGamePoints {
 public class GameData : ScriptableObject
 {
     [SerializeField] private State currentState;
+    [SerializeField] private State enemysDamagePoints;
 
     [NonSerialized] public State actualState;
+    //para cambiar de estado. Guarda el estado actual 
+    [NonSerialized] public State enemyDamage;
+    //cuenta los virus muertos
 
     public void SaveState()
     {
         actualState = currentState;
+    }
+    public void Damage()
+    {
+        enemyDamage = enemysDamagePoints;
     }
 }
