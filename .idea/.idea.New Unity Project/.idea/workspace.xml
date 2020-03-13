@@ -2,52 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb15448-3a0a-4ded-ab56-91b8ae92d7bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/RandomState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Data/RandomState.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Battle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Battle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Level.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Level.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Pointer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Pointer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/TManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/TManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/30/3002803a57befd24ba61945c221fd7f1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/30/3002803a57befd24ba61945c221fd7f1.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/3e/3ea149babec6fd046b2914497eba4757" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/3e/3ea149babec6fd046b2914497eba4757.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/5a/5aff5ebb5ab054e42913e93834495d8a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/5a/5aff5ebb5ab054e42913e93834495d8a.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/6d/6d47cf57764adfc43bab98c186500d7e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/6d/6d47cf57764adfc43bab98c186500d7e.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/9a/9a3f2736bcc02f845b262356cb6acb75" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/9a/9a3f2736bcc02f845b262356cb6acb75.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/9e/9e2f1936500ade7448ba17cfd991f8ce" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/9e/9e2f1936500ade7448ba17cfd991f8ce.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/be/be99e92c9e0c4964885d74342aab6c1b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/be/be99e92c9e0c4964885d74342aab6c1b.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Teleports.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Teleports.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay/NavMesh-NavMesh 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay/NavMesh-NavMesh 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay/NavMesh-NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay/NavMesh-NavMesh.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/BattleHUD.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/BattleSystem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Bioware.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Hacker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Hacker.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Mago.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/StartBattle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/States.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Unit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Unit.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Virus1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Virus1.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle/Virus2.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Battle1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/ChooseCharacter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FollowNegativ.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SaveLoad.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Teleport.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Teleport.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree_Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree_Textures/diffuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree_Textures/diffuse.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree_Textures/normal_specular.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree_Textures/normal_specular.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree_Textures/shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree_Textures/shadow.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree_Textures/translucency_gloss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tree_Textures/translucency_gloss.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VirusDestroyer3.0/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VirusDestroyer3.0/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VirusDestroyer3.0/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VirusDestroyer3.0/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/ScoreData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/ScoreData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Navmesh/NavmeshLink.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Navmesh/NavmeshLink.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh-NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh-NavMesh.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/BiowareController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/BiowareController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/EnemyController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/EnemyController.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/HackerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/HackerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/MagoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/MagoController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Virus1Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Virus1Controller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Virus2Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Virus2Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Virus4Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Virus4Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/State.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/States/AttackingState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/States/AttackingState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FSM/States/InvisibilityState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FSM/States/InvisibilityState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LifeTree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LifeTree.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.Rider.Editor.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
@@ -60,40 +79,27 @@
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/a294c1-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/a294c1-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/141205-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/141205-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/17/177ae76cd714e0a4499444dc5a1e8bff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/17/177ae76cd714e0a4499444dc5a1e8bff.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/3a/3a627b8daba46f14085ba3e9ff58967e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3a/3a627b8daba46f14085ba3e9ff58967e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/5a/5a9f6627738994847b20c799c6210bc3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5a/5a9f6627738994847b20c799c6210bc3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/3e/3e11759f64ea6604bb3171b43e5f532e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/3e/3e11759f64ea6604bb3171b43e5f532e" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/5b/5b329c25dc54bd94997f48c0cf502895" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/5b/5b329c25dc54bd94997f48c0cf502895" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/78/78cbb03b6517adc44b45cdfc9093d291" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/78/78cbb03b6517adc44b45cdfc9093d291.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/a3/a39fe1229dd17f44e8d5f1205fca1c47" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a3/a39fe1229dd17f44e8d5f1205fca1c47" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/ec/ec01171fd7dcdbd478e59546507d6146" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ec/ec01171fd7dcdbd478e59546507d6146" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c4/c4cf390617838754aada956774dd4c2a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c4/c4cf390617838754aada956774dd4c2a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/d0/d05242d3b78f8854fa84d077a402487e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d0/d05242d3b78f8854fa84d077a402487e" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/f8/f889b7b0407b2bd4686fe9cbd36db0b5" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/f8/f889b7b0407b2bd4686fe9cbd36db0b5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/fa/fa06f2352e171f24c92c0434590cccc7" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fa/fa06f2352e171f24c92c0434590cccc7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-011f7fffc57598149acb4cb965fbfa55" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-062040ad0694ee4469659fa29a14ae2a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-0b59fc878de773b4985938446addb3c8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-32495353e0ccf0345b432509ef3d3948" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3747e39d2f5b7724db9559fc836b438f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-39dcf5cddcbc76949aec26328c19fec5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3af0e99d0f82c6443a49954c1ab62735" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3b867ba0fcb2cfd49bc1639cd4621967" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-4d810b4d40f47914a81fa7beb2fb51b2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-5226c55b97902604dbefb3b52944f778" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-57fad1c0ed43292479a7b4e38e2199c4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-5958e3ec3dd530941828bb7ab74f6126" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-6d7431926e9029c4786999c7a36f2614" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-725b409a4364ff644887deb96400f0d8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-7bcb5088227a52943a212db3ef8e7093" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-90d297da94f15c64da7acdd06b110c26" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a0bd2f336180017479f6dfec8a603c45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a2371acd292af5e4e854fb09bb94188d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-b4649e8d0ed0ddd478ae55d5893545d3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-ccc115e8813383845bb44c83774c2357" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-cee655fdb9bffc54ab25863b01007255" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-e9d1c50f15bbf5e45b860b0ae6cb1781" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-fe023663d9611354f8be946a4b8cdbfd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/ProcessJobs/675f7315a8e628c76bd5cd85d6e446de.bakert" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,6 +114,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/States/CopyingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Virus3Controller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Battle/BattleSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Virus4Controller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/States/DoublingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/HackerController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -116,11 +123,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/States/InvisibilityState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/States/ScannerState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/States/StealingState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Data/Enums.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/States/DieState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LifeTree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/SimpleMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/States/ShootingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/States/LightningState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/versionVirusDestroyerBackUp2/Assets/Scripts/Controller/StateMachine/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TeleportBack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Teleport.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FollowNegativ.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Follow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/States/FightingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/States/PlayerMoveState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -159,6 +170,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/HackerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FSM/States/AttackingState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FSM/Controllers/Virus2Controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Teleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportBack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FollowNegativ.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Follow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Battle/BattleSystem.cs" />
       </list>
     </option>
   </component>
@@ -219,6 +235,9 @@
       <workItem from="1578422370975" duration="5176000" />
       <workItem from="1580526768666" duration="908000" />
       <workItem from="1580857882613" duration="2377000" />
+      <workItem from="1583784387974" duration="11800000" />
+      <workItem from="1583931477354" duration="2109000" />
+      <workItem from="1583947708296" duration="67000" />
     </task>
     <servers />
   </component>

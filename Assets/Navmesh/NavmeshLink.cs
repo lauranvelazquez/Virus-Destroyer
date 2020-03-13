@@ -6,7 +6,7 @@ namespace UnityEngine.AI
     [DefaultExecutionOrder(-101)]
     [AddComponentMenu("Navigation/NavMeshLink", 33)]
     [HelpURL("https://github.com/Unity-Technologies/NavMeshComponents#documentation-draft")]
-    public class NavMeshLink : MonoBehaviour
+    public partial class NavMeshLink : MonoBehaviour
     {
         [SerializeField]
         int m_AgentTypeID;

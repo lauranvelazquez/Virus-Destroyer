@@ -11,6 +11,8 @@ public class BiowareController : CharacterController
 
     public int shootingPoints;
 
+    
+    [SerializeField] 
     private KeyCode _shootKey;
     private KeyCode _fightKey;
     

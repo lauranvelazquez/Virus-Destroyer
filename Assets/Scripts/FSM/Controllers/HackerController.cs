@@ -7,20 +7,17 @@ using UnityEngine.UI;
 
 public class HackerController : CharacterController
 {
-    public int position;
-
-    public int velocity;
-
     private int _copyLimit=3;
 
     private ScoreData _scoreData;
 
     private GameData _gameData;
 
-    private State _currentState; 
+    private State _currentState;
     
-    [SerializeField]
-    private KeyCode bugKey, copyKey, stealKey;
+    private Hacker _hacker;
+    
+    [SerializeField] private KeyCode bugKey, copyKey, stealKey;
     
     private readonly BuggingState _bugging = new BuggingState();
     private readonly CopyingState _copying = new CopyingState();
@@ -67,7 +64,6 @@ public class HackerController : CharacterController
         _copyLimit--;
        // Battle.ChangeTurn();
         _gameData.actualState=_currentState;
-        
         CanPlay = false;
     }
 

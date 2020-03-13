@@ -24,16 +24,6 @@ public class MagoController : CharacterController
     {
         SwitchState(new IddleState());
         Debug.Log("Mago-Iddle");
-        
-        Button electricityButton = GetComponent<Button>();
-        Button pixelButton = GetComponent<Button>();
-        Button lightButton = GetComponent<Button>();
-                
-        pixelButton.onClick.AddListener(PixelOnClick);
-                
-        if(_electricityLimit<=0) electricityButton.onClick.AddListener(ElecOnClick);
-                
-        if (_scoreData.shootingPoints==100) lightButton.onClick.AddListener(LightOnClick);
     }
 
     // Update is called once per frame

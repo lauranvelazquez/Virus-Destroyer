@@ -19,13 +19,34 @@
           <e p="NavMeshSurfaceEditor.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="EventController.cs" t="Include" />
+          <e p="Battle" t="Include">
+            <e p="BattleHUD.cs" t="Include" />
+            <e p="BattleSystem.cs" t="Include" />
+            <e p="Bioware.cs" t="Include" />
+            <e p="Hacker.cs" t="Include" />
+            <e p="Mago.cs" t="Include" />
+            <e p="StartBattle.cs" t="Include" />
+            <e p="States.cs" t="Include" />
+            <e p="Unit.cs" t="Include" />
+            <e p="Virus1.cs" t="Include" />
+            <e p="Virus2.cs" t="Include" />
+          </e>
+          <e p="Data" t="Include">
+            <e p="Enums.cs" t="Include" />
+            <e p="EventController.cs" t="Include" />
+            <e p="Fight.cs" t="Include" />
+            <e p="GameEvents.cs" t="Include" />
+            <e p="InputData.cs" t="Include" />
+            <e p="RandomState.cs" t="Include" />
+            <e p="ScoreData.cs" t="Include" />
+          </e>
           <e p="FSM" t="Include">
             <e p="Controllers" t="Include">
               <e p="Battle.cs" t="Include" />
               <e p="BiowareController.cs" t="Include" />
               <e p="CharacterController.cs" t="Include" />
-              <e p="EnemyController.cs" t="Include" />
+              <e p="CharacterController1.cs" t="Include" />
+              <e p="ChooseCharacter.cs" t="Include" />
               <e p="HackerController.cs" t="Include" />
               <e p="MagoController.cs" t="Include" />
               <e p="MovementVirus2.cs" t="Include" />
@@ -37,13 +58,6 @@
               <e p="Virus2Controller.cs" t="Include" />
               <e p="Virus3Controller.cs" t="Include" />
               <e p="Virus4Controller.cs" t="Include" />
-            </e>
-            <e p="Data" t="Include">
-              <e p="Enums.cs" t="Include" />
-              <e p="Fight.cs" t="Include" />
-              <e p="InputData.cs" t="Include" />
-              <e p="RandomState.cs" t="Include" />
-              <e p="ScoreData.cs" t="Include" />
             </e>
             <e p="FSM.cs" t="Include" />
             <e p="State.cs" t="Include" />
@@ -66,8 +80,13 @@
               <e p="StealingState.cs" t="Include" />
             </e>
           </e>
-          <e p="GameEvents.cs" t="Include" />
-          <e p="LifeTree.cs" t="Include" />
+          <e p="GameElements" t="Include">
+            <e p="Follow.cs" t="Include" />
+            <e p="FollowNegativ.cs" t="Include" />
+            <e p="LifeTree.cs" t="Include" />
+            <e p="Teleport.cs" t="Include" />
+            <e p="TeleportBack.cs" t="Include" />
+          </e>
           <e p="UI" t="Include">
             <e p="GameplayTime.cs" t="Include" />
             <e p="GamePointsBar.cs" t="Include" />

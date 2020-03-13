@@ -63,4 +63,6 @@ public class Virus2Controller : Virus
         
         VirusInTurn();
     }
+
+    
 }
