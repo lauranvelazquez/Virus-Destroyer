@@ -1,18 +1,44 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class StartBattle3 : MonoBehaviour
+public class StartLevel3 : MonoBehaviour
 {
+    public GameObject level1;
+
+    public  bool startLevel=false;
+
+    public BattleMachine battleScript;
+
+    public Text dialogText;
     // Start is called before the first frame update
     void Start()
     {
-        
+        battleScript = level1.GetComponent<BattleMachine>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("estás en el nivel 3 we");
+            battleScript.enabled = true;
+        }
+        else
+        {
+            battleScript.enabled = false;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        Debug.Log("Ya no estás en el nivel 3 we");
+        battleScript.enabled = false;
+        dialogText.text = "Virus Destroyer";
     }
 }

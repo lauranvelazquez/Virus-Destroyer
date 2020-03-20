@@ -5,10 +5,8 @@ using UnityEngine;
 public class SimpleMovement : MonoBehaviour
 {
 
-	[SerializeField] private float _speed = 1f;
+	public float _speed = 1f;
 	[SerializeField] private float _step = 1f;
-	[SerializeField] private float _jumpHeight = 3;
-	[SerializeField] private float _distanceLength = 3;
 
 	private bool _isMoving = false;
 	private bool _canMove = true;

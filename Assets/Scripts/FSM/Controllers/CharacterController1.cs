@@ -10,10 +10,11 @@ public class CharacterController1 : MonoBehaviour
 
     [SerializeField] private Transform _initialPosition;
     
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -22,26 +23,32 @@ public class CharacterController1 : MonoBehaviour
         
     }
 
-    /*private void OnCollisionEnter(Collision col)
+    private void OnTriggerEnter(Collider other)
     {
-        //NavMeshAgent _navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
+        NavMeshAgent _navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
+        SimpleMovement _simpleMovement = gameObject.GetComponent<SimpleMovement>();
+        _navMeshAgent.enabled = false;
+        float currentaceleration=_navMeshAgent.acceleration;
         
-        if (col.gameObject.CompareTag("Teleport1") )
+        if (other.gameObject.CompareTag("Teleport1") )
         {
-           // _navMeshAgent.enabled = false;
-           // transform.position = _panalBattle.position;
+            transform.position = _panalBattle.position;
+
         }
-        else if (col.gameObject.CompareTag("GoBack"))
+        else if (other.gameObject.CompareTag("GoBack"))
         {
             Debug.Log("ola we");
-            //_navMeshAgent.enabled = false;
-            //transform.position = _initialPosition.position;
+            transform.position = _initialPosition.position;
+            
         }
-
-       // _navMeshAgent.enabled = true;
+        _simpleMovement._speed=0;
+        _navMeshAgent.acceleration = 0f;
+        _navMeshAgent.enabled = true;
+        _simpleMovement._speed=15;
+        _navMeshAgent.acceleration = currentaceleration;
     }
 
-    private void OnCollisionEnter(Collision other)
+  /*  private void OnCollisionEnter(Collision other)
     {
         NavMeshAgent _navMeshAgent = gameObject.GetComponent<NavMeshAgent>();
         

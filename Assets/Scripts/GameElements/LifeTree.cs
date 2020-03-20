@@ -6,15 +6,13 @@ using UnityEngine;
 public class LifeTree : MonoBehaviour
 {
     private int contador = 0;
-    private ScoreData _scoreData;
+    public ScoreData scoreData;
 
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Player" && contador < 4)
-        {
-            Debug.Log("Tree");
-            _scoreData.score++;
-        }
+        if (!col.gameObject.CompareTag("Player")) return;
+        Debug.Log("Tree");
+        scoreData.score++;
     }
 }

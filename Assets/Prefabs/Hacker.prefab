@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2414463251587380762}
   - component: {fileID: 1965511115661290606}
-  - component: {fileID: -1341542328987355441}
   m_Layer: 0
   m_Name: Hacker
   m_TagString: Untagged
@@ -49,18 +48,3 @@ MonoBehaviour:
   unitLevel: 1
   maxHP: 200
   currentHP: 20
---- !u!114 &-1341542328987355441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2414463251587380763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c2276b38db038042879c58d8f15addd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bugKey: 260
-  copyKey: 261
-  stealKey: 262

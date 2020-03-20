@@ -1,21 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
 public class States 
 {
     public string _currentEvent;
-    private ScoreData _scoreData;
+    
+    public ScoreData scoreData;
     
     public int _copyLimit=3;
      public void Iddle()
     {
-        
+        Debug.Log(" State");
     }
 
     public void Die()
     {
-        
+        Debug.Log(" State");
     }
 
     public void Copy()
@@ -65,68 +67,80 @@ public class States
 
         Debug.Log("Hacker - case2");
         _copyLimit--;
+        return;
     }
 
     public void Steal()
     {
         Debug.Log("Hacker - case3");
-        _scoreData.shootingPoints = 0;
+        scoreData.shootingPoints = 0;
         _currentEvent = "steal";
     }
 
     public void Bug()
     {
-        Debug.Log("Hacker - case1");
         _currentEvent = "Bug";
+        Debug.Log(" State");
     }
 
      public void Shoot()
      {
          _currentEvent = "shoot";
+         Debug.Log(" State");
      }
 
      public void Electricity()
      {
          _currentEvent = "electricity";
+         Debug.Log(" State");
      }
 
      public void Block()
      {
          _currentEvent = "block";
+         Debug.Log(" State");
      }
 
      public void Attack()
      {
          _currentEvent = "attack";
+         Debug.Log(" State");
      }
 
      public void Invisibility()
      {
          _currentEvent = "invisibility";
+         Debug.Log(" State");
      }
 
      public void Doubling()
      {
          _currentEvent = "doubling";
+         Debug.Log(" State");
      }
 
      public void Pixeling()
      {
          _currentEvent = "pixeling";
+         Debug.Log(" State");
+         return;
      }
 
      public void Scanner()
      {
          _currentEvent = "scanner";
+         Debug.Log(" State");
      }
 
      public void Light()
      {
          _currentEvent = "light";
+         Debug.Log(" State");
      }
 
      public void Fight()
      {
          _currentEvent = "fight";
+         Debug.Log(" State");
      }
 }

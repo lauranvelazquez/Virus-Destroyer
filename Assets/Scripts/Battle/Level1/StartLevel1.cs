@@ -8,7 +8,7 @@ public class StartLevel1 : MonoBehaviour
 {
     public GameObject level1;
 
-    public static bool startLevel=false;
+    public  bool startLevel=false;
 
     public BattleMachine battleScript;
 

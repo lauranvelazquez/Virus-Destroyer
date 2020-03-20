@@ -13,8 +13,10 @@ public class Bioware : MonoBehaviour
    private ScoreData _scoreData;
    [SerializeField] private KeyCode _shootKey;
    [SerializeField] private KeyCode _fightKey;
-   public void ChooseBiowareState()
+   public IEnumerator ChooseBiowareState()
    {
+      yield return new WaitUntil((() => Input.anyKey));
+      
       if (_scoreData.shootingPoints == 100 && Input.GetKey(_shootKey))
       {
          ShootOnClick();

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[CreateAssetMenu]
 public class ScoreData : ScriptableObject
 {
     [SerializeField] private int initialScore=150;
@@ -20,7 +20,7 @@ public class ScoreData : ScriptableObject
         score += initialScore * multiplier;
     }
     public void UpdatePoints(int multiplier) {
-        shootingPoints += initialShootingPoints * multiplier;
+        shootingPoints = initialShootingPoints;
     }
     public void UpdateGamePoints(int multiplier) {
         gamePoints += initialGamePoints * multiplier;

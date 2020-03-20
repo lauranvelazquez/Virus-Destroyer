@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2916699622477456211}
   - component: {fileID: 4270117656253712675}
-  - component: {fileID: -7911264799963055823}
   m_Layer: 0
   m_Name: Mago
   m_TagString: Untagged
@@ -50,21 +49,6 @@ MonoBehaviour:
   unitLevel: 1
   maxHP: 100
   currentHP: 0
---- !u!114 &-7911264799963055823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2916699622477456208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d313dedd2aad21740a50bd394e6f91e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _electricityKey: 263
-  _pixelKey: 264
-  _LightingKey: 265
 --- !u!1001 &2916699621378199194
 PrefabInstance:
   m_ObjectHideFlags: 0
